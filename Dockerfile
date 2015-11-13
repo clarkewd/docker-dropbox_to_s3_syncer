@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Download & install required applications: curl, sudo.
 RUN apt-get -qqy update
-RUN apt-get -qqy install inotify-tools awscli python-pip
+RUN apt-get -qqy install inotify-tools python-pip
 RUN pip install --upgrade awscli s3cmd
 
 # Create service account and set permissions.
