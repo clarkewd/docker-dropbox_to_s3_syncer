@@ -13,5 +13,7 @@ RUN pip install --upgrade awscli s3cmd
 RUN apt-get -qqy autoclean
 
 COPY sync_dropbox_to_s3.sh /
+COPY status /
+RUN chmod +x /sync_dropbox_to_s3.sh /status
 
 CMD ["/sync_dropbox_to_s3.sh"]
