@@ -7,7 +7,7 @@ The synced directory is assumed to be mounted as a volume to /dbox/Dropbox.
 
 This Docker image is not intended to be used alone, but in conjuction with a
 Dropbox-in-Docker container https://github.com/redradishtech/docker-dropbox.
-See The docker-compose.yml file in the parent directory.
+See the `docker-compose.yml` file in the parent directory.
 
 ## Required Environment Variables
 
