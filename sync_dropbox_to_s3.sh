@@ -28,7 +28,7 @@ function block_for_change {
 
 function sync {
   echo "Running rsync... $SRC to $DEST"
-  rsync -rlptvzO $SRC $DEST
+  rsync -rlptvzO --delete $SRC $DEST
 }
 
 
